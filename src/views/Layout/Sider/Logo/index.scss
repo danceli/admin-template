@@ -1,0 +1,31 @@
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  background-color: #2b2f3a;
+  color: #fff;
+
+  .logo-img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('../../../../assets/img/logo.svg') no-repeat;
+    background-size: 100% 100%;
+    animation: rotating 10s linear infinite;
+  }
+  .logo-title {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
